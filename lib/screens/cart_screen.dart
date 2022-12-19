@@ -223,8 +223,8 @@ class _CartScreenState extends State<CartScreen> {
           ],
         ),
         child: Center(
-          child: ElevatedButton(
-            style: ElevatedButton.styleFrom(
+          child: TextButton(
+            style: TextButton.styleFrom(
                 backgroundColor: Theme.of(context).primaryColor),
             child: const Text(
               'CHECKOUT',
@@ -232,6 +232,7 @@ class _CartScreenState extends State<CartScreen> {
                 fontSize: 22.0,
                 fontWeight: FontWeight.bold,
                 letterSpacing: 2.0,
+                color: Colors.white,
               ),
             ),
             onPressed: () {},

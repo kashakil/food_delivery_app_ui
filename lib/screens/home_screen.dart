@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_app_ui/data/data.dart';
+
 import 'package:food_delivery_app_ui/screens/cart_screen.dart';
 import 'package:food_delivery_app_ui/screens/restaurant_screen.dart';
 import 'package:food_delivery_app_ui/widgets/rating_stars.dart';
@@ -107,12 +108,13 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Food Delivery'),
         centerTitle: true,
         actions: <Widget>[
-          ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.deepOrange),
+          TextButton(
+            // style: TextButton.styleFrom(backgroundColor: Colors.deepOrange),
             child: Text(
               'Cart (${currentUser.cart.length})',
               style: const TextStyle(
                 fontSize: 20.0,
+                color: Colors.white,
               ),
             ),
             onPressed: () => Navigator.push(
