@@ -140,7 +140,7 @@ class _CartScreenState extends State<CartScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: Text('Cart (${currentUser.cart.length})'),
-        backgroundColor: Colors.deepOrange,
+        backgroundColor: Theme.of(context).primaryColor,
       ),
       body: ListView.separated(
         itemBuilder: (BuildContext context, int index) {
